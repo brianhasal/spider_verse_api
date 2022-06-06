@@ -1,14 +1,17 @@
+# admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTQ2MDc3Mjl9.IE9uQUOHYgHhgjvQgXngtPtg0rHVbMI7GokFtci1LBY
+
 ### Spiders Index
 GET http://localhost:3000/spiders.json
 
-### Spiders Index
+### Spiders Create
 POST http://localhost:3000/spiders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTQ2MDc3Mjl9.IE9uQUOHYgHhgjvQgXngtPtg0rHVbMI7GokFtci1LBY
 Content-Type: application/json
 
 {
-  "name": "Superior Spider-Man", 
-  "age": 34,
-  "arch_nemesis": "Peter Parker"
+  "name": "Aunt May", 
+  "age": 150,
+  "arch_nemesis": "Shingles"
 }
 
 
@@ -38,4 +41,14 @@ Content-Type: application/json
   "email": "admin@test.com",
   "password" : "password",
   "password_confirmation": "password"
+}
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "admin@test.com",
+  "password": "password"
 }
