@@ -13,4 +13,7 @@ Rails.application.routes.draw do
 
   delete "/spiders/:id" => "spiders#destroy"
 
+
+  post "/users" => "users#create"
+
 end
