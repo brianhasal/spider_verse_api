@@ -1,0 +1,28 @@
+### Spiders Index
+GET http://localhost:3000/spiders.json
+
+### Spiders Index
+POST http://localhost:3000/spiders.json
+Content-Type: application/json
+
+{
+  "name": "Superior Spider-Man", 
+  "age": 34,
+  "arch_nemesis": "Peter Parker"
+}
+
+
+### Spiders Show
+GET http://localhost:3000/spiders/3.json
+
+
+### Spiders Update
+PATCH http://localhost:3000/spiders/4.json
+Content-Type: application/json
+
+{
+  "arch_nemesis": "wrinkles"
+}
+
+### Spiders Destroy
+DELETE http://localhost:3000/spiders/4.json
